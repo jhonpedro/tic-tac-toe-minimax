@@ -137,3 +137,18 @@ a:visited {
 footer {
 	height: 60px;
 }
+
+@media (max-width: 600px) {
+	.container {
+		flex-direction: column;
+	}
+	.container img {
+		height: 30%;
+	}
+}
+
+@media (max-height: 620px) {
+	.container img {
+		display: none;
+	}
+}
