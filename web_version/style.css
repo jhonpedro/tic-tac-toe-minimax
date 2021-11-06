@@ -1,27 +1,45 @@
-/* ****************** Body, head etc ****************** */
-body {
+* {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100vh;
+}
+
+/* ****************** Body, head etc ****************** */
+body,
+a {
+	font-family: Poppins, Arial, Helvetica, sans-serif;
 }
 
 header {
-	background-color: #00AEEA;
+	background-color: #359830;
 	color: #eee;
 	text-align: center;
 	height: 60px;
 	padding-top: 5px;
 	display: block;
-	margin-top: 0px;
-	margin-bottom: 60px;
 	box-sizing: border-box;
 	position: relative;
 	width: 100%;
 }
 
+.container {
+	height: calc(100vh - 120px);
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.container img {
+	height: 50%;
+}
+
 p {
 	font-size: 14pt;
 	font-weight: bold;
-	font-family: Sans;
 	text-align: center;
 	position: relative;
 	text-align: center;
@@ -31,14 +49,14 @@ p {
 }
 
 a {
-	color: #00AEEA;
+	color: #359830;
 	text-decoration: none;
 }
 a:hover {
-	color: #00AEEA;
+	color: #359830;
 }
 a:visited {
-	color: #00AEEA;
+	color: #359830;
 }
 
 /* ****************** Table style ****************** */
@@ -49,21 +67,21 @@ a:visited {
 	font-size: 4em;
 	font-family: Sans;
 	color: #444;
-	background: #F8F8F8;
+	background: #f8f8f8;
 	width: 310px;
 	height: 300px;
 	text-align: center;
 	vertical-align: center;
-	border: 1px solid #CECECE;
+	border: 1px solid #cecece;
 	border-radius: 5px;
-	box-shadow: 1px 1px 1px #CCC;
+	box-shadow: 1px 1px 1px #ccc;
 }
 
 /*Column style*/
 #tab-tic-tac-toe td {
-	border-collapse:collapse;
-	border-left: 5px solid #CCC;
-	border-bottom: 5px solid #CCC;
+	border-collapse: collapse;
+	border-left: 5px solid #ccc;
+	border-bottom: 5px solid #ccc;
 }
 
 #tab-tic-tac-toe td:first-child {
@@ -79,36 +97,43 @@ a:visited {
 	cursor: pointer;
 	height: 95px;
 	width: 95px;
+	transition: all 400ms ease;
 }
 
 #tab-tic-tac-toe td:hover {
-	background: #ECECEC;
+	background: #ececec;
 }
 
 /* ****************** Restart Button ****************** */
 #bnt-restart {
 	display: block;
 	padding: 10px;
+	margin-top: 10px;
 	margin-left: auto;
 	margin-right: auto;
 	width: 200px;
-	background: #00AEEA;
+	background: #359830;
 	font-size: 1.5em;
-	color: #FFF;
+	color: #fff;
 	border: none;
 	border-radius: 6px;
 	cursor: pointer;
+	transition: all 400ms ease;
 }
 
 #bnt-restart:hover {
-	background: #1DC5FF;
+	background: #55b850;
 }
 
 #bnt-restart:active {
-	background: #0787B3;
+	background: #1e5f1b;
 }
 
 #bnt-restart:disabled {
 	color: #444;
-	background: #CECECE;
+	background: #cecece;
+}
+
+footer {
+	height: 60px;
 }
